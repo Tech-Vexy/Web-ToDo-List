@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Todo List</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="todo-container">
+  <h1>Welcome to Your Personalized Todo List</h1>
+  <div id="profile">
+    <h2>Profile</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <button onclick="setUsername()">Save</button>
+    <label for="avatar">Select Avatar:</label>
+    <select id="avatar">
+      <option value="./img/man.jpg">Man</option>
+      <option value="./img/woman.jpg">Woman</option>
+      <!-- Add more options for different avatars -->
+    </select>
+    <button onclick="setAvatar()">Save Avatar</button>
+    <div id="greeting"></div>
+    <div id="avatarPreview"></div>
+  </div>
+  <input type="text" id="todoInput" placeholder="Enter your task">
+  <input type="datetime-local" id="reminderInput" placeholder="Set Reminder">
+  <button onclick="addTodo()">Add</button>
+  <ul id="todoList">
+  </ul>
+</div>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
